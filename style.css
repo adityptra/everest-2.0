@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 180px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    ;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-image: url(https://cdn.pixabay.com/photo/2023/08/24/12/04/glacier-8210613_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+}
+
+.container {
+    max-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+
+.navbar h2 {
+    position: relative;
+    right: 24%;
+    align-items: flex-start;
+    font-size: 27px;
+    cursor: pointer;
+
+}
+
+
+.navbar h2 a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.navbar h2::selection {
+    background-color: transparent;
+    color: white;
+}
+
+.container-nav {
+    display: flex;
+}
+
+.container-nav li {
+    position: relative;
+    left: 90%;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.container-nav a {
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}
+
+.container-nav a::selection {
+    background-color: transparent;
+    color: white;
+}
+
+.container-nav #login a {
+    position: relative;
+    left: 50px;
+    border: 1px solid black;
+    background-color: black;
+    color: azure;
+    padding: 6px;
+    transition: .6s;
+    transition-delay: .2s;
+}
+
+.container-nav #login a:hover {
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid azure;
+    transition: .6s;
+}
+
+.container-nav a:hover {
+    text-decoration: underline;
+    transition: .6s;
+    transition-delay: .2s;
+}
+
+
+/* CONTENT HERE */
+.container-content {
+    position: relative;
+    margin-top: 160px;
+    top: 100px;
+}
+
+/* Login here */
+.icon-login {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 125px;
+    left: 72px;
+    z-index: -8;
+}
+
+.icon-login .fa-user {
+    position: relative;
+    top: 10px;
+    font-size: 12px;
+    position: relative;
+    top: 8px;
+    z-index: -8;
+}
+
+.icon-login .fa-lock {
+    font-size: 12px;
+    position: relative;
+    top: -4px;
+    z-index: -8;
+}
+
+.container .login-btn {
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 99;
+    position: relative;
+    top: -620px;
+    left: 70%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: .1px solid black;
+    border-bottom: none;
+    border-right: none;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: 275px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    transition: .7s;
+    transition-delay: .9s;
+    color: azure;
+    backdrop-filter: blur(3px);
+}
+
+.container .login-btn:hover {
+    transition: .2s;
+    box-shadow: none;
+    border: none;
+    background-color: rgba(0,0,0,0.118);
+}
+
+#user,
+#pw {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.login-btn input[type=text],
+[type=password] {
+    padding: 2px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.login-btn #p-p1 {
+    font-size: 23px;
+    font-weight: 800;
+    color: azure;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.login-btn .checkk {
+    position: relative;
+    top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.login-btn .checkk label {
+    font-weight: 400;
+    color: azure;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.login-btn .checkk label:checked {
+    color: #333;
+}
+
+.login-btn .checkk label:checked~label {
+    color: #333;
+}
+
+.login-btn #p-p3 {
+    font-size: 13px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.login-btn #p-p3 a {
+    transition: .6s;
+}
+
+.login-btn #p-p3 a:hover {
+    color: #666;
+    text-shadow: none;
+}
+
+.login-btn #btn {
+    background-color: transparent;
+    color: azure;
+    border: 1px solid azure;
+    border-radius: 2px;
+    transition: .6s;
+    transition-delay: .2s;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.login-btn #btn:hover {
+    border: 1px solid black;
+    background-color: black;
+}
+
+.login-form {
+    position: relative;
+    top: -25px;
+}
+
+.login-form a {
+    text-decoration: none;
+    color: azure;
+    font-weight: 600;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}
+
+/* LOGIN end */
+
+
+
+.mountain {
+    margin: auto;
+    width: 95vw;
+    height: 95vh;
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: -150px;
+}
+
+.mountain #h1,
+.mountain #p1 {
+    position: relative;
+    left: 110px;
+}
+
+.mountain #h1 {
+    color: azure;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    font-size: 35px;
+}
+
+.mountain #p1 {
+    position: relative;
+    top: -25px;
+    max-width: 560px;
+    text-align: justify;
+    color: azure;
+    font-weight: 50px;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+    font-family: 'Poppins', sans-serif;
+    ;
+}
+
+.mountain #p2 {
+    position: relative;
+    top: -35px;
+    width: 100px;
+    text-align: justify;
+    color: azure;
+    border: 1px solid azure;
+    left: 110px;
+    border-radius: 6.5px;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.mountain #p2:hover {
+    background-color: black;
+    border: 1px solid black;
+    transition: .6s;
+    transition-delay: .2s;
+}
+
+/* CONTAINER 1 end */
+
+
+/* CONTAINER 2 here */
+.container-2 {
+    z-index: 100;
+    opacity: 98%;
+    backdrop-filter: blur(0);
+    background-color: white;
+    min-height: 98vh;
+    min-width: 100vw;
+}
+
+.container-2 .pages {
+    margin: 20px;
+    position: relative;
+    top: 80px;
+    text-align: justify;
+    max-width: 600px;
+}
+
+.pages {
+    float: left;
+    padding: 5px;
+    position: relative;
+    left: 5%;
+}
+
+.clear {
+    clear: both;
+}
+
+.container-2 .pages h3 {
+    font-size: 35px;
+    font-weight: 800px;
+}
+
+.pages #text {
+    font-size: 14px;
+    position: relative;
+    top: -40px;
+}
+
+.pages #text2 {
+    font-size: 14px;
+    position: relative;
+    top: -40px;
+    max-width: 450px;
+}
+
+.pages #p2 {
+    position: relative;
+    top: -35px;
+    width: 100px;
+    text-align: justify;
+    color: black;
+    border: 1px solid black;
+    border-radius: 6.5px;
+    /* text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4); */
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.pages #p2:hover {
+    color: azure;
+    background-color: black;
+    border: 1px solid black;
+    transition: .6s;
+    transition-delay: .2s;
+}
+
+.container-2 .pages p {
+    max-width: 590px;
+}
+
+.pageto {
+    position: relative;
+    left: 15%;
+    top: 65px;
+    width: 38%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-2 .pages-images1 {
+    background-image: url("https://img.freepik.com/free-photo/view-spectacular-nature-landscape_23-2150763724.jpg?t=st=1693728285~exp=1693731885~hmac=5a5f8ad3ea78605b94ba9e17d2256f73973c07db04661c56bbbdfe3487d32d23&w=1480");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 400px;
+}
+
+.container-2 .pages-images1 img {
+    border-radius: 30%;
+    position: relative;
+    top: 5px;
+    margin: 20px;
+    width: 400px;
+}
+
+.container-2 .pages-images2 {
+    background-image: url("https://img.freepik.com/premium-photo/high-snowcapped-peaks-glaciers-from-top_812090-1511.jpg?w=900");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 400px;
+    position: relative;
+    top: 25px;
+    left: 5%;
+}
+
+.container-2 .pages-images1 img {
+    border-radius: 30%;
+    position: relative;
+    top: 5px;
+    margin: 20px;
+    width: 400px;
+    left: -5%;
+}
+
+
+
+/* CONTAINER 2 end */
+
+
+/* CONTAINER 3 here */
+.container-3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    scroll-padding-top: -50px;
+}
+
+.container-3 .title-contact {
+    font-size: 30px;
+}
+
+.container-3 .p-contact {
+    font-size: 13px;
+    text-align: justify;
+    position: relative;
+    top: -20px;
+    max-width: 500px;
+
+}
+
+.container-3 .form-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-3 .form-contact .text-area {
+    position: relative;
+    top: -25px;
+}
+
+.form-contact .text-area #plc::placeholder {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.3);
+    padding: 4px;
+}
+
+.text-area input {
+    width: 240px;
+}
+
+.container-3 .form-contact .check {
+    font-size: 13px;
+    position: relative;
+    left: 10%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-contact .check #check {
+    margin-right: 8px;
+    pointer-events: none;
+}
+
+.form-contact .check label {
+    font-weight: 450;
+    color: black;
+    cursor: pointer;
+}
+
+.form-contact .check #check:checked {
+    color: #333;
+}
+
+.form-contact .check #check:checked~label {
+    color: #333;
+}
+
+
+/* CONTAINER 3 end */
+
+/* FOOTER HERE */
+.icon {
+    width: 100px;
+    position: absolute;
+    margin-right: 20px;
+    left: 95%;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    top: 15px;
+    line-height: 10px;
+    font-size: 22px;
+}
+
+.icon a {
+    color: azure;
+    text-decoration: none;
+}
+
+.icon a:visited {
+    color: #666;
+}
+
+
+.footer {
+    margin-bottom: 0;
+    width: 100vw;
+    height: 18vh;
+    position: absolute;
+    z-index: 1000;
+    color: #efefef;
+    background-color: black;
+}
+
+.footer p::selection {
+    background-color: transparent;
+    color: azure;
+}
+
+.container-footer {
+    background-color: black;
+    display: flex;
+}
+
+.footer .about,
+.footer .contact,
+.footer .service,
+.footer .help {
+    width: 210px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 2%;
+    font-family: url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap') format(woff), sans-serif;
+}
+
+.footer #h3 {
+    text-align: center;
+}
+
+.footer .about p,
+.footer .contact p,
+.footer .service p,
+.footer .help p,
+.footer .event p {
+    max-width: 170px;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.footer .help {
+    position: relative;
+    left: -5%;
+}
+
+.footer .event {
+    position: relative;
+    top: 5px;
+    left: -10%;
+
+}
+
+.footer .page {
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 2%;
+    position: relative;
+    right: 10%;
+    top: 5%;
+}
+
+.footer .page p {
+    max-width: 240px;
+    font-size: 11px;
+    line-height: 15px;
+    position: relative;
+    top: -25px;
+    text-align: justify;
+}
+
+.footer .hh3 {
+    font-size: 22px;
+    position: relative;
+    top: -14px;
+}
